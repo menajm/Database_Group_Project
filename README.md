@@ -45,16 +45,16 @@ The model incorporates primary and foreign keys, cascading actions, and validati
 
 # Triggeres & Stored Procedures
 
-- updateArtCount: Increments an artist’s total artwork count when a new art piece is added for an artist already in the system.
+- **updateArtCount**: Increments an artist’s total artwork count when a new art piece is added for an artist already in the system.
 
-- decrementArtCount: Decreases the artwork count when an art piece is removed from the museum’s collection.
+- **decrementArtCount**: Decreases the artwork count when an art piece is removed from the museum’s collection.
 
-- prevent_location_delete: Blocks deletion of any location that still has active events assigned to it.
+- **prevent_location_delete**: Blocks deletion of any location that still has active events assigned to it.
 
-- cleanup_feedback_after_event_delete: Automatically removes visitor feedback associated with an event when that event is deleted.
+- **cleanup_feedback_after_event_delete**: Automatically removes visitor feedback associated with an event when that event is deleted.
 
-- validate_staff_location: Ensures staff cannot be assigned to locations that do not exist in the database.
+- **validate_staff_location**: Ensures staff cannot be assigned to locations that do not exist in the database.
 
-- auto_feedback_date: Automatically sets the feedback date on insert if the user does not provide one.
+- **auto_feedback_date**: Automatically sets the feedback date on insert if the user does not provide one.
 
-- GetEventFeedbackSummary (Stored Procedure): Generates an event‑level analytics summary, returning the event’s theme, total number of feedback entries, and average visitor rating. This supports the museum’s need for reporting and data‑driven exhibit planning.
+- **GetEventFeedbackSummary (Stored Procedure)**: Generates an event‑level analytics summary, returning the event’s theme, total number of feedback entries, and average visitor rating. This supports the museum’s need for reporting and data‑driven exhibit planning.
